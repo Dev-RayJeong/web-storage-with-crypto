@@ -1,6 +1,6 @@
 import CryptoJS from 'crypto-js';
 
-const KEY = 'gXd4%04@2!5nsd#d0';
+const KEY = 'UNIQUE_KEY_WHAT_YOU_WANT';
 const getEncryptedStr = (str: string, key: string): string => CryptoJS.AES.encrypt(str, key).toString();
 const getDecryptedStr = (str: string, key: string): string =>
   CryptoJS.AES.decrypt(str, key).toString(CryptoJS.enc.Utf8);
