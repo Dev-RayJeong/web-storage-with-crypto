@@ -5,7 +5,7 @@ Web session storage and local storage with crypto(supported TypeScript)
 You can save JavaScript objects by converting it to encrypted string using this library
 
 This library needs crypto-js dependency
-```Shell
+```console
  npm install crypto-js
 ```
 
