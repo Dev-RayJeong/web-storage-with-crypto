@@ -6,7 +6,7 @@ You can save JavaScript objects by converting it to encrypted string using this 
 
 This library needs crypto-js dependency
 ```bash
-npm install crypto-js
+$ npm install crypto-js
 ```
 
 ## 1. Session Storage
