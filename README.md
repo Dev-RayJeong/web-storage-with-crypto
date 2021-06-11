@@ -1,41 +1,43 @@
 
+
 # web-storage-with-crypto
 Web session storage and local storage with crypto(supported TypeScript)
 You can save JavaScript objects by converting it to encrypted string using this library
 
 This library needs crypto-js dependency
-
-    npm install crypto-js
- 
+```bash
+ npm install crypto-js
+```
 
 ## 1. Session Storage
 
 **Usage:** 
-	
-	 import session from './sessionStorage.js';
-	    
+```javascript
+ import session from './sessionStorage.js';
+```	    
 You should set unique key to encrypt and decrypt your object's key
-
-	 const KEY = 'UNIQUE_KEY_WHAT_YOU_WANT';
-	
+```javascript
+ const KEY = 'UNIQUE_KEY_WHAT_YOU_WANT';
+```	
 * Set object to session storage 
-
-       session.set(key);
-
+  ```javascript
+   session.set(key);
+  ```
 * Get object from session storage
-
-       session.get(key);
-
+  ```javascript
+   session.get(key);
+  ```
 * Remove object from session storage
-
-       session.remove(key);
-	
+  ```javascript
+   session.remove(key);
+  ```
 * Remove all objects from session storage
-
-       session.clear();
+  ```javascript
+   session.clear();
+  ```
 
 **sessionStorage.js**
-```
+```javascript
 import CryptoJS from 'crypto-js';
 
 const KEY = 'UNIQUE_KEY_WHAT_YOU_WANT';
@@ -75,7 +77,7 @@ export default class session {
 ```
 
 **sessionStorage.ts**
-```
+```javascript
 import CryptoJS from 'crypto-js';
 
 const KEY = 'UNIQUE_KEY_WHAT_YOU_WANT';
@@ -119,31 +121,32 @@ export default class session {
 
  
 Usage: 
-	
-     import local from './localStorage.js';
-	    
+```javascript	
+ import local from './localStorage.js';
+```	    
 You should set unique key to encrypt and decrypt your object's key
-
-     const KEY = 'UNIQUE_KEY_WHAT_YOU_WANT';
-	
+```javascript
+ const KEY = 'UNIQUE_KEY_WHAT_YOU_WANT';
+```	
 * Set object to local storage 
-
-       local.set(key);
-
+  ```javascript
+   local.set(key);
+  ```
 * Get object from local storage
-
-       local.get(key);
-
+  ```javascript
+   local.get(key);
+  ```
 * Remove object from local storage
-
-       local.remove(key);
-	
+  ```javascript
+   local.remove(key);
+  ```
 * Remove all objects from local storage
-
-       local.clear();
-
+  ```javascript
+   local.clear();
+  ```
+  
 **localStorage.js**
-```
+```javascript
 import CryptoJS from 'crypto-js';
 
 const KEY = 'UNIQUE_KEY_WHAT_YOU_WANT';
@@ -183,7 +186,7 @@ export default class local {
 ```
 
 **localStorage.ts**
-```
+```javascript
 import CryptoJS from 'crypto-js';
 
 const KEY = 'UNIQUE_KEY_WHAT_YOU_WANT';
